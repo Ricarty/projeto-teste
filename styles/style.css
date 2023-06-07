@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Krona+One&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+:root{
+    --color-primaria: #F3CEE8;
+    --color-secundaria:#FA65D6;
+    --color-terciaria:#B700FA;
+    --color-quarteta: black;
+    --color-quinta:red;
+    --color-cestiaria: red;
+
+    --font-primaria:'Krona One', sans-serif;
+    --font-secundaria:'Akronim', cursive;
+    --font-terciaria: 'Montserrat', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+ 
+    box-sizing: border-box;
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+
+}
+
+.logo {
+    
+  display: flex;
+  font-size: 2rem;
+  width: 200%;
+ 
+}
+
+.inicio{
+    display: flex;
+   
+   
+    flex-direction: column;
+    width: 100%;
+
+
+    
+}
+
+.inicio__entrepaginas { 
+    padding: 2% 0% 0% 15%;
+    display: flex;
+ 
+    align-items: center;
+    width: 70%;
+
+}
+
+.inicio__entrepagina__link{
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 100%;
+    color: var(--color-secundaria);
+    text-decoration: none;
+    width: 100%;
+    gap: 2px;
+}
+
+strong {
+    color: var(--color-terciaria);
+}
+
+
+.cabecario{
+    padding: 5% 15%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+
+.cabcario__primeiro{
+    width: 50%;
+   display: flex;
+  justify-content: space-between;
+   
+    align-items: center;
+  
+    
+}
+
+.apresentacao__imagen{
+    width: 50%;
+}
+
+
+.cabecario__cont{
+    width: 50%;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+}
+
+.ofertadodia{
+    display: flex;
+    justify-content: center;
+}
+
+.ofertadodia__a{
+    
+    font-family: var(--font-secundaria);
+    font-size: 6rem;
+    font-weight: 400;
+    color: var(--color-quinta);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cabecario__cont__tamanho{
+     font-size: 2.5rem;
+     font-family: var(--font-primaria);
+   
+}
+
+.cabecario__con__tamanho__texto{
+    font-size:1rem;
+    font-family: var(--font-primaria);
+    
+   
+}
+
+.cabecario__con__tamanho__texto__visivel{
+    font-size: 1.5rem;
+    font-family: var(--font-primaria);
+   
+
+}
+
+.cabecario__con__tamanho__texto__visivel__melhor{
+    font-size: 4rem;
+    font-family: var(--font-secundaria);
+  
+
+}
+
+.cabecario__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+
+}
+
+.cabecario__sub { 
+    font-family: var(--font-primaria);
+    font-weight: 50%;
+    font-size: 1.5rem;
+   
+}
+
+
+.cabecario__links__form{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px  dotted var(--color-terciaria);
+    width: 70%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: var(--color-terciaria);
+    font-family: var(--font-terciaria);
+} 
+
+
+
+.cabecario__links__form:hover{
+    background: var(--color-secundaria);
+    color: var(--color-quarteta);
+    padding: 1%;
+}
+
+.rodape{
+    color: var(--color-quarteta);
+    background: var(--color-secundaria);
+    padding: 4px;
+    font-family: var(--font-terciaria);
+    font-size: 1rem;
+     font-weight: 400;
+    border: 2px solid  var(--color-secundaria);
+    text-align: center;
+
+}
+
+@media (max-width: 1500px){
+    
+    .inicio__entrepaginas{
+        width: auto;
+        
+    }
+
+    .ofertadodia__a {
+            font-size: 3rem;
+            width: auto;
+            align-items: center;
+    }
+
+    .cabecario{
+        flex-direction: column-reverse;
+        padding: 3% 
+    }
+
+    .cabecario__cont{
+        width: auto;
+    }
+
+    .apresentacao__imagen{
+        width: auto;
+    }
+
+
+    .cabecario__sub{
+        font-size: 1rem;
+    }
+
+
+   .cabecario__links{
+        font-size: 0.5rem;
+   }
+
+   
+
+   .cabecario__links__form{
+    font-size: 1.3rem;
+   }
+
+   
+
+   .inicio__entrepaginas{
+    font-size: 0.5rem;
+    width: auto;
+    padding: 2%;
+    gap: 1px;
+    justify-content: center;
+   }
+    
+   .inicio__entrepagina__link{
+    font-size: 0.8rem;
+    padding: 2% 0% 0% 5%;
+   }
+  
+    
+}
+
+
+.spassa{
+    display: flex;
+    padding: 0 30px;
+}
+
+.content__produtos{
+    flex: 1;
+    padding: 3%;
+
+    
+
+}
+
+.content__produtos__resumo{
+    background-color: darkred;
+
+}
